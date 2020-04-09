@@ -1,0 +1,173 @@
+contentDir = "content"
+layoutDir = "layouts"
+publishDir = "public"
+buildDrafts = false
+baseURL = "https://annieehler.com/"
+canonifyURLs = true
+languageCode = "default"
+title = "Annie Ehler"
+theme = "dimension"
+googleAnalytics = "UA-121920291-1"
+
+[params]
+  name = "Annie Ehler"
+  about = "Undergraduate at <a href='https://hampshire.edu/'>Hampshire College</a>, studying</br>alternative medicine and herbalism. Former research</br>assistant at the University of Iowa <a href='https://medicine.uiowa.edu/'>Carver College of Medicine</a></br>department of internal medicine in the <a href='https://www.healthcare.uiowa.edu/pbi/'>Pappajohn Biomedical</br>Institute</a> in conjunction with the <a href='https://medicine.uiowa.edu/humangenetics/'>Iowa Institue for Human Genetics</a>."
+	description = "Personal site for my curriculum vitae"
+	copyright= "Annie Ehler 2020."
+
+	OneTitle="Work"
+
+	TwoTitle="Education and Awards"
+	TwoSubOne="Education"
+	TwoSubTwo="Awards"
+
+	ThreeTitle="Projects"
+
+	FourTitle="Skills and Interests"
+
+[[params.social]]
+	link="https://twitter.com/andydrew10898"
+	icon="twitter"
+	medium="Twitter"
+
+[[params.social]]
+	link="https://facebook.com/andrew10898"
+	icon="facebook-f"
+	medium="Facebook"
+
+[[params.social]]
+	link="https://instagram.com/andydrew10898"
+	icon="instagram"
+	medium="Instagram"
+
+[[params.social]]
+	link="https://github.com/andydrew10898"
+	icon="github"
+	medium="GitHub"
+
+[[params.work]]
+	work="Fund For The Public Interest"
+	date="June 2019 - August 2019"
+	description="Contracted Summer Canvasser"
+
+[[params.work]]
+	work="Compassionate Knowledge Institute"
+	date="September 2018 - May 2019"
+	description="Administrative Assistant"
+
+[[params.work]]
+	work="University of Iowa"
+	date="June 2016 - August 2018"
+	description="Research Assistant"
+
+[[params.work]]
+	work="Starbucks"
+	date="January 2017 - August 2017"
+	description="Barista"
+
+[[params.work]]
+	work="Sephora in JCPenney"
+	date="November 2016 - Febuary 2017"
+	description="Makeup Artist"
+
+[[params.work]]
+	work="New Pioneer Food Co-Op"
+	date="June 2015 - October 2015"
+	description="Customer Service Clerk"
+
+[[params.school]]
+  school="Hampshire College"
+  location="Amherst, MA"
+  gradDate="May 2021"
+  degree="Bachalors of the Arts"
+
+[[params.school]]
+	school="University of Iowa"
+	location="Iowa City, IA"
+	gradDate="Transfered May 2018"
+	degree="Bachalors of Science - Engineering"
+
+[[params.school]]
+	school="Thomas Jefferson High School"
+	location="Cedar Rapids, IA"
+	gradDate="May 2017"
+	degree="Diploma"
+
+[[params.awards]]
+	award="UIUC HACKILLINOIS Finalist"
+	date="2018"
+	description="Google, Inc.'s choice award winner"
+
+[[params.awards]]
+	award="Belin Blank Scholar"
+	date="2013"
+	description="Scholarship to the <a href='https://belinblank.education.uiowa.edu/'>Belin Blank Summer Institute</a>"
+
+[[params.awards]]
+	award="Innovation Expo"
+	date="2015"
+	description="Featured student engineer"
+
+[[params.awards]]
+	award="Iowa All-State Choir"
+	date="2015 &amp; 2016"
+	description="Select high school choral singer"
+
+[[params.awards]]
+	award="Iowa All-State Music Competition"
+	date="2015 &amp; 2016"
+	description="Division I soloist"
+
+[[params.awards]]
+	award="<a href='https://nats.org/'>NATS Soloist</a>"
+	date="2016"
+	description="Select classical solosit"
+
+[[params.awards]]
+	award="Valadictorian"
+	date="2017"
+	description="Cumulative GPA of 4.19 or above - One of 11"
+
+[[params.projects]]
+	title="Cystic Fibrosis Foundation"
+	description="Geneticist studying gene regulation in lungs affected by Cystic Fibrosis, Bronchtis, and COPD. Included intense statistical conmputation and rudementary machine learning."
+
+[[params.projects]]
+	title="Adverse Childhood Experiences"
+	description="Hosted an event to educate the public about rough home experiences and mental health in today’s youth. 200 tickets were purchased in the first week sales opened."
+
+[[params.projects]]
+	title="Vitis Herbarium"
+	description="Researcher at University of Northern Iowa’s botanical labs, researching the metamorphic distinguishing factors in the species of the vitis phylum through herbarium, ampelography, and metamorphic image analysis."
+
+[[params.projects]]
+	title="Humans of Cedar Rapids"
+	description="Began a blog group in Cedar Rapids, IA to help voice the stories of Iowa’s unsung heroes, and provide a platform to begin the discussions of our issues that people would usually shy away from."
+
+[[params.projects]]
+	title="Physics for Creativity"
+	description="Reimagined high school advanced physics curriculum for the modern world in an effort to spark more interest in STEM fields, especially in minority populations."
+
+[[params.skill]]
+  skill="Web Design &amp; Coding"
+[[params.skill]]
+  skill="Adobe Design Suite"
+[[params.skill]]
+  skill="Statistical Analysis &amp; Processing"
+[[params.skill]]
+  skill="Amazon Web Servers"
+[[params.skill]]
+  skill="Makeup Artistry"
+[[params.skill]]
+  skill="Classical Opera &amp; Piano"
+
+[[params.interest]]
+  interest="Alternative &amp; Complementary Medicine "
+[[params.interest]]
+  interest="Transgender Studies &amp; Equality"
+[[params.interest]]
+  interest="Applications of Psychology &amp; Sociology"
+[[params.interest]]
+  interest="Cycling &amp; Climbing"
+[[params.interest]]
+  interest="Fashion Photography"

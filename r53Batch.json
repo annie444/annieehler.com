@@ -1,0 +1,28 @@
+{
+    "Changes": [
+        {
+            "Action":"UPSERT",
+            "ResourceRecordSet": {
+                "AliasTarget": {
+                    "HostedZoneId": "Z2FDTNDATAQYW2", 
+                    "EvaluateTargetHealth": false, 
+                    "DNSName": "d12029rvmz4xuu.cloudfront.net."
+                }, 
+                "Type": "A", 
+                "Name": "andrewehler.com."
+            }
+        },{
+            "Action":"UPSERT",
+            "ResourceRecordSet": {
+                "ResourceRecords": [
+                    {
+                        "Value": "d12029rvmz4xuu.cloudfront.net"
+                    }
+                ],
+                "Type": "CNAME",
+                "Name": "www.andrewehler.com.",
+                "TTL": 300
+            }
+        }
+    ]
+}

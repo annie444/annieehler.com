@@ -1,0 +1,101 @@
+{
+    "Comment": "andrewehler.com-cdn Static Hosting", 
+    "Logging": {
+        "Bucket": "andrewehler.com-cdn-logs.s3.amazonaws.com", 
+        "Prefix": "andrewehler.com-cdn-cf/", 
+        "Enabled": true,
+        "IncludeCookies": false
+    }, 
+    "Origins": {
+        "Quantity": 1,
+        "Items": [
+            {
+                "Id":"andrewehler.com-cdn-origin",
+                "OriginPath": "", 
+                "CustomOriginConfig": {
+                    "OriginProtocolPolicy": "http-only", 
+                    "HTTPPort": 80, 
+                    "OriginSslProtocols": {
+                        "Quantity": 3,
+                        "Items": [
+                            "TLSv1", 
+                            "TLSv1.1", 
+                            "TLSv1.2"
+                        ]
+                    }, 
+                    "HTTPSPort": 443
+                }, 
+                "DomainName": "andrewehler.com-cdn.s3-website-us-east-1.amazonaws.com"
+            }
+        ]
+    }, 
+    "DefaultRootObject": "index.html", 
+    "PriceClass": "PriceClass_All", 
+    "Enabled": true, 
+    "CallerReference": "1514254313",
+    "DefaultCacheBehavior": {
+        "TargetOriginId": "andrewehler.com-cdn-origin",
+        "ViewerProtocolPolicy": "redirect-to-https", 
+        "DefaultTTL": 1800,
+        "AllowedMethods": {
+            "Quantity": 2,
+            "Items": [
+                "HEAD", 
+                "GET"
+            ], 
+            "CachedMethods": {
+                "Quantity": 2,
+                "Items": [
+                    "HEAD", 
+                    "GET"
+                ]
+            }
+        }, 
+        "MinTTL": 0, 
+        "Compress": true,
+        "ForwardedValues": {
+            "Headers": {
+                "Quantity": 0
+            }, 
+            "Cookies": {
+                "Forward": "none"
+            }, 
+            "QueryString": false
+        },
+        "TrustedSigners": {
+            "Enabled": false, 
+            "Quantity": 0
+        }
+    }, 
+    "ViewerCertificate": {
+        "SSLSupportMethod": "sni-only", 
+        "ACMCertificateArn": "arn:aws:acm:us-east-1:740903481658:certificate/8ef55f94-6c8b-499c-9c64-36cfd651a6d3", 
+        "MinimumProtocolVersion": "TLSv1", 
+        "Certificate": "arn:aws:acm:us-east-1:740903481658:certificate/8ef55f94-6c8b-499c-9c64-36cfd651a6d3", 
+        "CertificateSource": "acm"
+    }, 
+    "CustomErrorResponses": {
+        "Quantity": 2,
+        "Items": [
+            {
+                "ErrorCode": 403, 
+                "ResponsePagePath": "/404.html", 
+                "ResponseCode": "404",
+                "ErrorCachingMinTTL": 300
+            }, 
+            {
+                "ErrorCode": 404, 
+                "ResponsePagePath": "/404.html", 
+                "ResponseCode": "404",
+                "ErrorCachingMinTTL": 300
+            }
+        ]
+    }, 
+    "Aliases": {
+        "Quantity": 2,
+        "Items": [
+            "andrewehler.com", 
+            "www.andrewehler.com"
+        ]
+    }
+}
