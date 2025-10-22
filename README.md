@@ -1,38 +1,90 @@
-# sv
+# Analetta Ehler — Personal Website
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A personal website built with **SvelteKit** to serve as my **curriculum vitae**, **blog**, and **portfolio**.  
+This project is both a home for my professional work and an ongoing experiment in web architecture, accessibility, and design.
 
-## Creating a project
+---
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Overview
 
-```sh
-# create a new project in the current directory
-npx sv create
+This site has three core purposes:
 
-# create a new project in my-app
-npx sv create my-app
+1. **CV / Professional Profile** — A structured and easily navigable résumé outlining my academic background, professional experience, and technical skills.
+2. **Blog** — A place for essays, technical write-ups, and reflections on topics like software engineering, distributed systems, embedded Rust, and open source.
+3. **Portfolio** — Showcases selected projects, talks, and open-source contributions, with links to repositories and demos when available.
+
+---
+
+## Tech Stack
+
+| Layer              | Technology                                                           | Description                                                     |
+| ------------------ | -------------------------------------------------------------------- | --------------------------------------------------------------- |
+| Frontend Framework | [SvelteKit](https://kit.svelte.dev/)                                 | Application framework with file-based routing and built-in SSR. |
+| Styling            | [TailwindCSS](https://tailwindcss.com/)                              | Utility-first CSS framework for responsive, accessible design.  |
+| Markdown / Content | [MDsveX](https://mdsvex.pngwn.io/)                                   | Markdown-based blog and documentation engine for Svelte.        |
+| Deployment         | [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/) | Seamless CI/CD for static and hybrid-rendered apps.             |
+
+Optional integrations:
+
+- **RSS feed** for blog posts
+- **JSON Resume export** for machine-readable CVs
+- **Open Graph / SEO metadata** for social sharing
+- **Analytics** (Plausible, Fathom, or self-hosted)
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js ≥ 18
+- pnpm or npm
+
+### Installation
+
+```bash
+git clone https://github.com/annie444/personal-website.git
+cd personal-website
+pnpm install
+pnpm dev
 ```
 
-## Developing
+Visit http://localhost:5173 to view the site locally.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Build for Production
 
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```bash
+pnpm build
+pnpm preview
 ```
 
-## Building
+## Project Structure
 
-To create a production version of your app:
-
-```sh
-npm run build
+```bash
+src/
+├── routes/           # SvelteKit routes (pages, API endpoints)
+├── lib/              # Reusable components and utilities
+├── content/
+│   ├── blog/         # Markdown or MDsveX blog posts
+│   └── projects/     # Portfolio item metadata
+├── styles/           # Tailwind and global CSS
+└── data/             # Structured CV data (JSON or YAML)
 ```
 
-You can preview the production build with `npm run preview`.
+## Philosophy
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+The site is designed to be minimal, fast, and honest—a single source of truth for my work and ideas.
+It avoids unnecessary dependencies and focuses on clarity, accessibility, and long-term maintainability.
+
+## Links
+
+- Website: https://annieehler.com
+- GitHub: https://github.com/annie444
+- LinkedIn: https://linkedin.com/in/annie444
+
+## License
+
+All original code is released under the MIT License.
+All written content (blog posts, essays, etc.) is © Analetta Ehler, unless otherwise noted.
+
+> Built with SvelteKit, Tailwind, and a bit of curiosity.
