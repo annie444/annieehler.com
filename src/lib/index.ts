@@ -1,1 +1,9 @@
-// place files you want to import through the `$lib` alias in this folder.
+export { default as PageHero } from './components/sections/PageHero.svelte';
+export { default as SectionHeading } from './components/sections/SectionHeading.svelte';
+export { default as HighlightStats } from './components/sections/HighlightStats.svelte';
+export { default as ProjectList } from './components/projects/ProjectList.svelte';
+export { default as ExperienceTimeline } from './components/cv/ExperienceTimeline.svelte';
+export { default as SkillTags } from './components/cv/SkillTags.svelte';
+export { default as BlogList } from './components/blog/BlogList.svelte';
+export { default as ContactChannels } from './components/contact/ContactChannels.svelte';
+export { default as NowBoard } from './components/now/NowBoard.svelte';

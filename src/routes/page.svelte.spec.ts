@@ -4,10 +4,16 @@ import { render } from 'vitest-browser-svelte';
 import Page from './+page.svelte';
 
 describe('/+page.svelte', () => {
-	it('should render h1', async () => {
+	it('renders the hero headline and CTA links', async () => {
 		render(Page);
 
-		const heading = page.getByRole('heading', { level: 1 });
+		const heading = page.getByRole('heading', {
+			level: 1,
+			name: /Designing resilient systems/i
+		});
 		await expect.element(heading).toBeInTheDocument();
+
+		const primaryCta = page.getByRole('link', { name: /Download CV/i });
+		await expect.element(primaryCta).toBeInTheDocument();
 	});
 });
